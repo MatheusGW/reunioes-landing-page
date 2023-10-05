@@ -43,10 +43,31 @@
 }
 
 #rodape {
-  text-align: center;
-  background-color: rgb(4, 113, 255);
-  color: rgb(0, 0, 0);
-  margin-top: 80px;
-  background: linear-gradient(to top,rgb(4, 113, 255),rgb(255, 255, 255));
-  height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    gap: 30px;
+    box-shadow: 10px 3px 10px #000000bb;
+    background-color: #0c1259;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#rodape .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#rodape .social ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#rodape .social ul img {
+    width: 30px;
 }
